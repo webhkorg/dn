@@ -1,0 +1,19 @@
+#header {
+    position: absolute;
+}
+
+#header.fixed {
+    position: fixed;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}

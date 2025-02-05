@@ -1,19 +1,114 @@
-<html>
-    <head>
-        <title>闇闇快訊</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <link rel="stylesheet" href="bootstap.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="jquery.js"></script>
-    </head>
-    <body>
-        <div>
-            <div class="col-6">
-                left
-            </div>
-            <div class="col-6">
-                right
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <title>闇闇快訊</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/global.js"></script>
+</head>
+
+<body>
+    <div id="header" class="z-1 top-0 bg-dark bg-gradient text-light w-100 p-2 d-flex align-items-center">
+        <img src="images/icon.png" class="me-2" style="max-width: 32px;">
+        闇闇快訊
+    </div>
+    <div class="vh-100 overflow-hidden d-flex justify-content-center align-items-center">
+        <div class="d-md-block d-none">
+            <div class="position-absolute top-0 end-0 bottom-0 start-0 d-flex justify-content-center align-items-center text-center"
+                style="background: url(images/visual.jpg) center center no-repeat; background-size: cover;">
             </div>
         </div>
-    </body>
+        <div class="d-block d-md-none">
+            <div class="position-absolute top-0 end-0 bottom-0 start-0 d-flex justify-content-center align-items-center text-center"
+                style="background: url(images/visualMobile.jpg) center center no-repeat; background-size: cover;">
+            </div>
+        </div>
+        <div class="position-absolute top-0 end-0 bottom-0 start-0 " style="background-color: rgba(0, 0, 0, 0.66)">
+        </div>
+        <div
+            class="position-absolute d-flex flex-wrap justify-content-center align-items-center text-center">
+            <div style="max-width: 140px;">
+                <img src="images/home/roles.gif" style="max-width: 100px;">
+            </div>
+            <div style="max-width: 140px;">
+                <a href="https://line.me/ti/p/mXrzBhNWoN" target="_blank">
+                    <img src="images/home/kaKaLineQRCode.jpg" class="m-3" style="max-width: 100px;">
+                </a>
+                <a href="https://line.me/ti/p/1GC8kyVhj6" target="_blank">
+                    <img src="images/home/samLineQRCode.jpg" class="m-3 mt-0" style="max-width: 100px;">
+                </a>
+            </div>
+            <div class="mt-3">
+                <b class="text-light">
+                    我們活躍在賴群
+                    <br>
+                    加入好友 hihelohihelo (台灣)
+                    <br>
+                    加入好友 scheungdream (香港)
+                    <br>
+                    <br>
+                    伺服器：26 艾特拉集市
+                    <br>
+                    旅團名稱：奇跡
+                    <br>
+                    旅團ID：112797
+                </b>
+            </div>
+        </div>
+        <div class="position-absolute bottom-0 start-50 pb-3">
+            <a href="#content">
+                <i class="bi bi-chevron-double-down h1 text-light"></i>
+            </a>
+        </div>
+    </div>
+    <div id="content" style="background-color: #c9daf8;">
+        <div class="container">
+            <div class="d-flex flex-wrap text-center">
+                <div class="col-6 col-md-4 p-2">
+                    <img src="images/home/instantNews.png" class="w-100">
+                    <div>
+                        即時快訊
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 p-2">
+                    <img src="images/home/paperWingsBattle.png" class="w-100">
+                    <div>
+                        紙飛機
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 p-2">
+                    <img src="images/home/melomons.png" class="w-100">
+                    <div>
+                        麥樂獸
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 p-2">
+                    <img src="images/home/ridingBeasts.png" class="w-100">
+                    <div>
+                        騎行獸
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 p-2">
+                    <img src="images/home/catBuns.png" class="w-100">
+                    <div>
+                        貓貓包
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 p-2">
+                    <img src="images/home/attributes.png" class="w-100">
+                    <div>
+                        初學者屬性指南
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
