@@ -14,9 +14,29 @@
 </head>
 
 <body>
-    <div id="header" class="z-1 top-0 bg-dark bg-gradient text-light w-100 p-2 d-flex align-items-center">
+    <div id="header" class="z-1 top-0 bg-dark text-light w-100 p-2 d-flex align-items-center">
+        <a id="menuOpenButton">
+            <i class="bi bi-list h1 text-light me-1"></i>
+        </a>
         <img src="images/icon.png" class="me-2" style="max-width: 32px;">
         闇闇快訊
+    </div>
+    <div id="menu" class="z-1">
+        <a id="menuCloseButton">
+            <i class="bi bi-x-lg h1 text-light"></i>
+        </a>
+        <div class="p-3 d-flex align-items-center">
+            <img src="images/icon.png" class="me-2" style="max-width: 32px;">
+            闇闇快訊
+        </div>
+        <ul class="mt-3">
+            <li><a href="instantNews.html">即時快訊</a></li>
+            <li><a href="paperWingsBattle.html">紙翼大作戰</a></li>
+            <li><a href="melomons.html">麥樂獸</a></li>
+            <li><a href="ridingBeasts.html">騎行獸</a></li>
+            <li><a href="catBuns.html">貓貓包</a></li>
+            <li><a href="attributes.html">初學者屬性指南</a></li>
+        </ul>
     </div>
     <div class="vh-100 overflow-hidden d-flex justify-content-center align-items-center">
         <div class="d-md-block d-none">
@@ -31,8 +51,7 @@
         </div>
         <div class="position-absolute top-0 end-0 bottom-0 start-0 " style="background-color: rgba(0, 0, 0, 0.66)">
         </div>
-        <div
-            class="position-absolute d-flex flex-wrap justify-content-center align-items-center text-center">
+        <div class="position-absolute d-flex flex-wrap justify-content-center align-items-center text-center">
             <div style="max-width: 140px;">
                 <img src="images/home/roles.gif" style="max-width: 100px;">
             </div>
@@ -71,40 +90,40 @@
         <div class="container">
             <div class="d-flex flex-wrap text-center">
                 <div class="col-6 col-md-4 p-2">
-                    <img src="images/home/instantNews.png" class="w-100">
-                    <div>
+                    <a class="text-dark link-underline link-underline-opacity-0" href="instantNews.html">
+                        <img src="images/home/instantNews.png" class="w-100">
                         即時快訊
-                    </div>
+                    </a>
                 </div>
                 <div class="col-6 col-md-4 p-2">
-                    <img src="images/home/paperWingsBattle.png" class="w-100">
-                    <div>
-                        紙飛機
-                    </div>
+                    <a class="text-dark link-underline link-underline-opacity-0" href="paperWingsBattle.html">
+                        <img src="images/home/paperWingsBattle.png" class="w-100">
+                        紙翼大作戰
+                    </a>
                 </div>
                 <div class="col-6 col-md-4 p-2">
-                    <img src="images/home/melomons.png" class="w-100">
-                    <div>
+                    <a class="text-dark link-underline link-underline-opacity-0" href="melomons.html">
+                        <img src="images/home/melomons.png" class="w-100">
                         麥樂獸
-                    </div>
+                    </a>
                 </div>
                 <div class="col-6 col-md-4 p-2">
-                    <img src="images/home/ridingBeasts.png" class="w-100">
-                    <div>
+                    <a class="text-dark link-underline link-underline-opacity-0" href="ridingBeasts.html">
+                        <img src="images/home/ridingBeasts.png" class="w-100">
                         騎行獸
-                    </div>
+                    </a>
                 </div>
                 <div class="col-6 col-md-4 p-2">
-                    <img src="images/home/catBuns.png" class="w-100">
-                    <div>
+                    <a class="text-dark link-underline link-underline-opacity-0" href="catBuns.html">
+                        <img src="images/home/catBuns.png" class="w-100">
                         貓貓包
-                    </div>
+                    </a>
                 </div>
                 <div class="col-6 col-md-4 p-2">
-                    <img src="images/home/attributes.png" class="w-100">
-                    <div>
-                        初學者屬性指南s
-                    </div>
+                    <a class="text-dark link-underline link-underline-opacity-0" href="attributes.html">
+                        <img src="images/home/attributes.png" class="w-100">
+                        初學者屬性指南
+                    </a>
                 </div>
             </div>
         </div>
