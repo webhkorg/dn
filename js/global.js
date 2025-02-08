@@ -19,4 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
             menu.classList.remove('open');
         });
     }
+    if (document.getElementById('visual')){
+        var visualElement = document.getElementById('visual');
+        var windowHeight = window.innerHeight;
+        visualElement.style.height = windowHeight + 'px';
+    }
 });

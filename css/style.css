@@ -10,9 +10,9 @@ html, body{
     position: fixed;
 }
 
-.visual {
+#visual {
     position: relative;
-    height: 100lvh;
+    overflow: hidden;
 }
 
 #homeContent, #content {
