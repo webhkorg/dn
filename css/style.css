@@ -10,6 +10,11 @@ html, body{
     position: fixed;
 }
 
+.visual {
+    position: relative;
+    height: 100lvh;
+}
+
 #homeContent, #content {
     position: relative;
     background: #c9daf8;
@@ -39,7 +44,7 @@ html, body{
 #menu {
     width: 100%;
     height: 100%;
-    max-width: 400px;
+    max-width: 320px;
     background-color: #333;
     color: white;
     position: fixed;
