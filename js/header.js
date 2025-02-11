@@ -1,7 +1,7 @@
 document.write(`
     <div id="header" class="shadow z-1 top-0 bg-dark text-light w-100 p-2 d-flex align-items-center">
     <a id="menuOpenButton">
-        <i class="bi bi-list h1 text-light me-1"></i>
+        <i class="bi bi-list h3 text-light me-1"></i>
     </a>
     <a href="index.html"><img src="images/icon.png" class="me-2" style="max-width: 32px;"></a>
     <h5 class="p-0 m-0">

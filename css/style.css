@@ -31,7 +31,6 @@ html, body{
 }
 
 .remarks {
-    font-size: 0.8em;
     border-radius: 10px;
     border: 2px dashed #999;
     padding: 0.3rem;
@@ -46,7 +45,6 @@ html, body{
 #footer {
     position: absolute;
     width: 100%;
-    height: 68px;
     bottom: 0;
     text-align: center;
     background-color: #895129;
@@ -103,6 +101,10 @@ html, body{
 }
 
 @media only screen and (max-width: 768px) {
+
+    body {
+        font-size: 0.8rem;
+    }
 
     .container {
         padding: 10px;
