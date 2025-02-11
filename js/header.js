@@ -4,19 +4,19 @@ document.write(`
         <i class="bi bi-list h1 text-light me-1"></i>
     </a>
     <a href="index.html"><img src="images/icon.png" class="me-2" style="max-width: 32px;"></a>
-    <h3 class="p-0 m-0">
+    <h5 class="p-0 m-0">
     `
     + document.title +
     `
-    </h3>
+    </h5>
     </div>
     <div id="menu" class="z-1">
     <a id="menuCloseButton">
-        <i class="bi bi-x-lg h1 text-light"></i>
+        <i class="bi bi-x h1 text-light"></i>
     </a>
     <div class="p-3 d-flex align-items-center">
         <a href="index.html"><img src="images/icon.png" class="me-2" style="max-width: 32px;"></a>
-        闇闇快訊
+        <h5 class="p-0 m-0">闇闇快訊</h5>
     </div>
     <ul class="p-0 m-0 pt-3 pb-3 mt-3">
         <li><a href="instantNews.html">即時快訊</a></li>

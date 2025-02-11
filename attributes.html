@@ -14,11 +14,128 @@
 </head>
 
 <body>
+    <script src="js/html-guard.js"></script>
     <script src="js/header.js"></script>
     <div id="content">
         <div class="container">
-            <div class="d-flex flex-wrap text-center">
-                
+            <script src="js/breadcrumb.js"></script>
+            <div class="table-responsive">
+                <table class="table text-left small">
+                    <thead>
+                        <tr class="table-success">
+                            <th>&nbsp;</th>
+                            <th>坦克</th>
+                            <th>補師</th>
+                            <th>輸出</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>命中值</th>
+                            <td><i class="bi bi-x-lg"></i></td>
+                            <td><i class="bi bi-x-lg"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <th>暴擊值</th>
+                            <td><i class="bi bi-x-lg"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <th>技巧值</th>
+                            <td><i class="bi bi-x-lg"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <th>急速值</th>
+                            <td><i class="bi bi-triangle"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <th>攻擊值</th>
+                            <td><i class="bi bi-x-lg"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                            <td><i class="bi bi-triangle"></i></td>
+                        </tr>
+                        <tr>
+                            <th>全能值</th>
+                            <td><i class="bi bi-x-lg"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                            <td><i class="bi bi-triangle"></i></td>
+                        </tr>
+                        <tr>
+                            <th>底力值</th>
+                            <td><i class="bi bi-circle"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <th>免傷值</th>
+                            <td><i class="bi bi-circle"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <th>防禦值</th>
+                            <td><i class="bi bi-circle"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                            <td><i class="bi bi-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <th>格擋值</th>
+                            <td><i class="bi bi-circle"></i></td>
+                            <td><i class="bi bi-triangle"></i></td>
+                            <td><i class="bi bi-triangle"></i></td>
+                        </tr>
+                        <tr>
+                            <th>閃避值</th>
+                            <td><i class="bi bi-triangle"></i></td>
+                            <td><i class="bi bi-triangle"></i></td>
+                            <td><i class="bi bi-triangle"></i></td>
+                        </tr>
+                        <tr>
+                            <th>生命值</th>
+                            <td><i class="bi bi-triangle"></i></td>
+                            <td><i class="bi bi-triangle"></i></td>
+                            <td><i class="bi bi-triangle"></i></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-center">
+                                <i class="bi bi-circle"></i> 重要
+                                <i class="bi bi-triangle ms-3"></i> 可選擇
+                                <i class="bi bi-triangle ms-3"></i> 不重要
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="remarks">
+                <b>命中值</b> - 提高自身攻擊不被敵人閃避的幾率。
+                <hr>
+                <b>暴擊值</b> - 當造成傷害時，有一定幾率觸發暴擊，使該次傷害獲得暴擊傷害屬性的加成。
+                <hr>
+                <b>技巧值</b> - 當造成傷害或提供治療時，有一定幾率觸發技巧，使該次傷害無視目標的防禦力或治療量翻倍。
+                <hr>
+                <b>急速值</b> - 提高普通攻擊以及主動技能的施放、吟唱、引導速度。
+                <hr>
+                <b>攻擊值</b> - 提高普通攻擊、傷害技能、治療技能強度的基礎數值。
+                <hr>
+                <b>全能值</b> - 造成傷害以及提供治療時的百分比加成。
+                <hr>
+                <b>底力值</b> - 隨生命值降低逐漸減少受到的傷害，生命值降至15%時至多可減少底力%的傷害。
+                <hr>
+                <b>免傷值</b> - 減少受到的所有傷害。
+                <hr>
+                <b>防禦值</b> - 降低受到攻擊時生命值減少量的基礎數值。
+                <hr>
+                <b>格擋值</b> - 被普通攻擊擊中時，有幾率觸發格擋，使受到傷害降低，傷害降低效果受格擋減傷率影響。
+                <hr>
+                <b>閃避值</b> - 被攻擊時，有幾率觸發閃避避免受到傷害。
+                <hr>
+                <b>生命值</b> - 生命值上限，受到攻擊致使生命值減少到 0 後角色死亡。
             </div>
         </div>
     </div>

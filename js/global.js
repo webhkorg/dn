@@ -1,3 +1,8 @@
+function adjustHeight() {
+    var visualElement = document.getElementById('visual');
+    visualElement.style.height = window.innerHeight + 'px';
+}
+
 window.addEventListener('scroll', function () {
     const header = document.getElementById('header');
     if (window.scrollY >= 1) {
@@ -20,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     if (document.getElementById('visual')){
-        var visualElement = document.getElementById('visual');
-        var windowHeight = window.innerHeight;
-        visualElement.style.height = windowHeight + 'px';
+        window.onload = adjustHeight;
+        window.onresize = adjustHeight;
+        adjustHeight();
     }
 });
