@@ -24,6 +24,21 @@ document.addEventListener('DOMContentLoaded', function() {
             menu.classList.remove('open');
         });
     }
+    if(document.querySelector('.dateChecker')){
+        const dateDivs = document.querySelectorAll('.dateChecker');
+        dateDivs.forEach(dateDiv => {
+            const year = parseInt(dateDiv.children[0].textContent);
+            const month = parseInt(dateDiv.children[1].textContent.split('月')[0]);
+            const day = parseInt(dateDiv.children[1].textContent.split('月')[1].split('日')[0]);
+            const eventDate = new Date(year, month - 1, day);
+            const eventPeriod = new Date(year, month - 1, day);
+            eventPeriod.setDate(eventDate.getDate() + 7);
+            const today = new Date();
+            if (today >= eventDate && today < eventPeriod) {
+                dateDiv.classList.add('mark');
+            }
+        });
+    }
     if (document.getElementById('visual')){
         window.onload = adjustHeight;
         window.onresize = adjustHeight;
