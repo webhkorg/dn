@@ -2,6 +2,34 @@ html, body{
     position: relative;
 }
 
+#loadingWrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #333;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progress {
+    height: 20px;
+    width: 0;
+    background: #895129;
+    transition: width 0.4s;
+}
+
 #header {
     position: absolute;
     height: 64px;

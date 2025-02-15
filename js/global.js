@@ -12,7 +12,54 @@ window.addEventListener('scroll', function () {
     }
 });
 
+const totalImages = 11;
+let loadedImages = 0;
+
+function closeLoading() {
+    document.getElementById('loadingWrap').classList.add("d-none");
+}
+
+function updateProgress() {
+    loadedImages++;
+    console.log(loadedImages);
+    const progressPercentage = (loadedImages / totalImages) * 100;
+    document.getElementById('progress').style.width = progressPercentage + '%';
+
+    if (loadedImages === totalImages) {
+        setTimeout(() => {
+            closeLoading();
+        }, 500);
+    }
+}
+
+function preloadImages() {
+    const images = [
+        'images/home/roles.gif',
+        'images/home/kaKaLineQRCode.jpg',
+        'images/home/samLineQRCode.jpg',
+        'images/home/instantNews.png',
+        'images/home/paperWingsBattle.png',
+        'images/home/melomons.png',
+        'images/home/ridingBeasts.png',
+        'images/home/catBuns.png',
+        'images/home/attributes.png',
+        'images/visual.jpg',
+        'images/visualMobile.jpg'
+    ];
+    images.forEach(image => {
+        const img = new Image();
+        img.src = image;
+        img.onload = updateProgress();
+        //img.onerror = updateProgress();
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+
+    if (document.title == "闇闇快訊"){
+        window.addEventListener('load', preloadImages());
+    }
+
     if (document.getElementById('menu') && document.getElementById('menuOpenButton')) {
         const menu = document.getElementById('menu');
         const menuOpenButton = document.getElementById('menuOpenButton');
