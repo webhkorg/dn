@@ -32,6 +32,15 @@ function updateProgress() {
     }
 }
 
+function imgLoad(img, callback) {
+    var timer = setInterval(function () {
+        if (img.complete) {
+            callback(img);
+            clearInterval(timer);
+        }
+    }, 50);
+}
+
 function preloadImages() {
     const images = [
         'images/home/roles.gif',
@@ -49,15 +58,34 @@ function preloadImages() {
     images.forEach(image => {
         const img = new Image();
         img.src = image;
-        img.onload = updateProgress();
-        //img.onerror = updateProgress();
+        imgLoad(img, function () {
+            updateProgress();
+        });
     });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     if (document.title == "闇闇快訊"){
         window.addEventListener('load', preloadImages());
+    }
+
+    if(document.getElementById("date")){
+        const date = new Date();
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1) + "月";
+        const day = String(date.getDate()).padStart(2, '0');
+        document.getElementById('dateDay').innerText = day;
+        document.getElementById('dateMonth').innerText = month;
+        
+        fetch('https://timeapi.io/api/time/current/zone?timeZone=Asia%2FHong_Kong')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('dateDay').innerText = String(data.day).padStart(2, '0');
+            document.getElementById('dateMonth').innerText = String(data.month) + "月";
+        })
+        .catch(error => {
+        });
     }
 
     if (document.getElementById('menu') && document.getElementById('menuOpenButton')) {
@@ -71,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
             menu.classList.remove('open');
         });
     }
-    if(document.querySelector('.dateChecker')){
+    if (document.querySelector('.dateChecker')) {
         const dateDivs = document.querySelectorAll('.dateChecker');
         dateDivs.forEach(dateDiv => {
             const year = parseInt(dateDiv.children[0].textContent);
@@ -86,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    if (document.getElementById('visual')){
+    if (document.getElementById('visual')) {
         window.onload = adjustHeight;
         window.onresize = adjustHeight;
         adjustHeight();
